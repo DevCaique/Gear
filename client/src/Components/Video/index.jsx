@@ -1,11 +1,10 @@
 import { VideoS } from "./style";
-import WhatIf from "../../assets/what_if.jpg";
 
-export function Video() {
+export function Video(props) {
   return (
-    <VideoS>
-      <img src={WhatIf} />
-      What If Season 2
+    <VideoS to={props.link}>
+      <img src={props.src} />
+      <p>{props.title}</p>
     </VideoS>
   );
 }

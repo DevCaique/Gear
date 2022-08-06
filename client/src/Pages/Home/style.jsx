@@ -19,4 +19,13 @@ export const VideoSection = styled.section`
   display: grid;
   gap: ${SIZES.paddingNormal} ${SIZES.paddingSmall};
   grid-template-columns: repeat(4, 1fr);
+
+  @media screen and (max-width: 1200px) {
+    grid-template-columns: 1fr 1fr;
+  }
+
+  @media screen and (max-width: 598px) {
+    grid-template-columns: 1fr;
+    gap: ${SIZES.paddingSmall} ${SIZES.paddingSmallest};
+  }
 `;
